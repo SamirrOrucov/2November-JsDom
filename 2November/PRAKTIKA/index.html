@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .bgColor {
+        background-color: rgb(171, 129, 129);
+        list-style-type: none;
+        width: 200px;
+      } */
+      #color {
+        width: 200px;
+      }
+      #width {
+        width: 200px;
+      }
+      .bgColor{
+        background-color: color;
+      }
+      .size{
+        width: sizePx;
+      }
+      .changeBox{
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: hotpink;
+        transition: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button class="btn"></button> -->
+    <!-- <ul class="bgColor">
+      <li>Balaken</li>
+      <li>Zaqatala</li>
+      <li>Qax</li>
+      <li>Sheki</li>
+      <li>Oguz</li>
+    </ul> -->
+
+
+    <input type="text" name="color" id="color" />
+    <input type="text" name="width" id="width" />
+    <button class="btn">Push Me</button>
+
+   <div class="changeBox">
+
+   </div>
+
+    <script>
+      //   const btn = document.querySelector(".btn");
+      //   btn.addEventListener("click", function () {
+      //     newDiv.append(btnText);
+      //   });
+      //   const newDiv = document.createElement("div");
+      //   document.body.append(newDiv);
+      //   newDiv.style.width = "500px";
+      //   newDiv.style.marginLeft = "100px";
+      //   newDiv.style.color = "rgb(16, 39, 255)";
+      //   newDiv.style.border = "1px solid black";
+
+      //   const btnText = (btn.textContent = "Bas Mene");
+      //   btn.style.backgroundColor = "black";
+      //   btn.style.color = "white";
+      //   btn.style.padding = "50px";
+      //   btn.style.borderRadius = "12px";
+
+      //   document.body.style.display = "flex";
+      //   document.body.style.boxSizing = "border-box";
+
+      //   document.body.style.alignItems = "center";
+      //   document.body.style.justifyContent = "center";
+      //   document.body.style.height = "100vh";
+      //   btn.style.boxShadow = " 2px 2px 2px 0.3px rgb(16, 39, 255)";
+      //   const list = document.body.querySelectorAll("ul li");
+      //   for (let i = 0; i < ul.length; i++) {
+      //     list.addEventListener("click",function () {
+      //         console.log(list.textContent);
+      //    })
+      //   }
+      //    list.forEach(x=>{
+      //     x.addEventListener("click",()=>
+      //     {
+      //         console.log(x.textContent);
+      //     })
+      //     })
+
+      //   const city = document.body.querySelectorAll("ul li");
+      //   city.forEach(x => {
+      //     x.addEventListener("click", () => {
+      //         x.classList.toggle("bgColor")
+      //     });
+      //   });
+      // const city = document.body.querySelectorAll("ul li");
+      //   city.forEach(x => {
+      //     x.addEventListener("click", () => {
+      //         // x.classList.toggle("bgColor")
+      //     x.remove("ul li")
+      //     });
+
+      //   });
+   const color=document.body.querySelector("#color")
+   const width=document.body.querySelector("#width")
+   const box=document.body.querySelector(".changeBox")
+   const button=document.body.querySelector(".btn")
+   button.addEventListener("click",function () {
+    box.style.width=width.value+"px"
+    box.style.backgroundColor=color.value
+
+
+    
+   })
+
+
+   
+   </script>
+  </body>
+</html>
